@@ -17,9 +17,9 @@ after_success:
   - docker build -t shubham8896/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - docker push stephengrider/multi-client
-  - docker push stephengrider/multi-nginx
-  - docker push stephengrider/multi-server
-  - docker push stephengrider/multi-worker
+  - docker push shubham8896/multi-client
+  - docker push shubham8896/multi-nginx
+  - docker push shubham8896/multi-server
+  - docker push shubham8896/multi-worker
 
 
